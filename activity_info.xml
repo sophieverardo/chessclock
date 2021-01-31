@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09102D"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/tcxGlossary"
+        android:layout_width="310dp"
+        android:layout_height="53dp"
+        android:text="Glossary"
+        android:textColor="#D73528"
+        android:textSize="44sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <ImageButton
+        android:id="@+id/btnRestore"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="85dp"
+        android:layout_height="36dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="480dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        app:layout_constraintBottom_toTopOf="@+id/txtpa1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_media_pause" />
+
+    <ImageButton
+        android:id="@+id/btnInfo"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728"
+        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+    <TextView
+        android:id="@+id/txtInfoTop"
+        android:layout_width="282dp"
+        android:layout_height="183dp"
+        android:text="The game will finish when the timer will arrive on the '0:0:0:0'. If the match will finish before, it's good to tap the stop button and in case restart. The timer won't stop if you get out from the app. "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/txtInfoCenter"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:text="This buttons are:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/txtRestartInfo"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:text="Restart Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <TextView
+        android:id="@+id/txtStartInfo"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:text="Start Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <TextView
+        android:id="@+id/txtTimerInfo"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:text="Timer Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <TextView
+        android:id="@+id/txtStopInfo"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:text="Stop Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <TextView
+        android:id="@+id/txtBack"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:text="Return Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
